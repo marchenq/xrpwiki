@@ -3,103 +3,48 @@
 <head>
 	<style>
 		
-		body {
-			margin: 0;
-		}
+		body 						  { margin: 0; 										}
+		p 							  { font-family: "Segoe UI Light"; 					}	
+		canvas.particles-js-canvas-el { position: absolute; z-index: 999; opacity: 0.5; }
+		canvas 						  { display: block; vertical-align: bottom; 		}
 		
-				.footer   { position: absolute; right: 0; bottom: 0;   left: 0; color: white; font-family: 'Segoe UI Light'; font-size: 16px; padding: 1rem; opacity: 0.5; text-align: center; 			}		
-
+		.footer   		   			  { position: absolute; right: 0; bottom: 0;   left: 0; color: white; font-family: 'Segoe UI Light'; font-size: 16px; padding: 1rem; opacity: 0.5; text-align: center; }		
+		.slider-area 	   			  { display: block; width: 100%; height: 100%; 																														   }		
+		.verticalLine 	   		      { border-left: thin solid #B0B0B0; padding-left: 10px; 																											   }	
+		.slider-wrapper-2  		      { height: 100%; width:100%; text-align: center; position: relative; 																								   }		
+		.slider-fixed-text 			  { color: #fff; left: 15%; position: absolute; right: 0; top: 20%; text-align: left; z-index: 1; width: 70%; 														   }
+		.noselect		   			  { -moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; -o-user-select: none; user-select: none; cursor:default;                				   } 
 		
-		.slider-area {
-		    display: block;
-		    width: 100%;
-			height: 100%;
-		}
-		
-		.verticalLine {
-		  border-left: thin solid #B0B0B0;
-			    padding-left: 10px;
-		}
-		
-		p {
-			font-family: "Segoe UI Light";
-		}
-		
-		
-		.slider-wrapper-2 {
-		    height: 100%;
-			width:100%;
-		    text-align: center;
-		    position: relative;
-		}
-		
-		#particles-js {
-		    position: absolute;
-		    width: 100%;
-		    height: 100%;
-		    background-image: url("http://i.epvpimg.com/ArYKbab.jpg");
-		    background-repeat: no-repeat;
-		    background-size: cover;
-		    background-position: 50% 50%;
-		}
-		
-		.slider-fixed-text {
-		    color: #fff;
-		    left: 15%;
-		    position: absolute;
-		    right: 0;
-		    top: 20%;
-			text-align: left;
-		    z-index: 1;
-			width: 70%;
-		}
-		
-		canvas.particles-js-canvas-el {
-		    position: absolute;
-		    z-index: 999;
-		    opacity: 0.5;
-		}
-		
-		
-		canvas {
-		    display: block;
-		    vertical-align: bottom;
-		}
-		
-		.noselect { -moz-user-select: none; -webkit-user-select: none; -ms-user-select: none; -o-user-select: none; user-select: none; cursor:default;                				        } 
+		#particles-js 	   		      { position: absolute; width: 100%; height: 100%; background-image: url("http://i.epvpimg.com/ArYKbab.jpg"); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }		
 	</style>
 	<title>Ripple Russia</title>
 </head>
 
 <body>
-	<div class="noselect">
-		
+	<div class="noselect">	
 		<div class="slider-area">
         		<div class="row">
             			<div class="slider-wrapper-2">
                 			<div id="particles-js">
-						  <div class="slider-fixed-text">
-							  <img src="http://i.epvpimg.com/5cM6dab.png">
-							  <p><font size=24>xrp.wiki</font> 
-							  </br> 
-							первый русскоязычный портал о Ripple</p>
-					<div class="verticalLine">
-						<p align="justify">
-						Ripple — система валовых расчётов реального времени, обмена валют и денежных переводов, разработанная компанией Ripple. 
-						Построен на распределённом интернет-протоколе с открытым исходным кодом, консенсусном реестре и собственной криптовалюте, именуемой XRP. 
-						Запущенный в 2012 году, Ripple направлен на то, чтобы обеспечить «безопасные, мгновенные и почти бесплатные глобальные финансовые операции любого размера без возвратных платежей». 
+								<div class="slider-fixed-text">
+									<img src="http://i.epvpimg.com/5cM6dab.png">
+									<p><font size=24>xrp.wiki</font></br>первый русскоязычный портал о Ripple</p>
+									<div class="verticalLine">
+										<p align="justify">
+										Ripple — система валовых расчётов реального времени, обмена валют и денежных переводов, разработанная компанией Ripple. 
+										Построен на распределённом интернет-протоколе с открытым исходным кодом, консенсусном реестре и собственной криптовалюте, именуемой XRP. 
+										Запущенный в 2012 году, Ripple направлен на то, чтобы обеспечить «безопасные, мгновенные и почти бесплатные глобальные финансовые операции любого размера без возвратных платежей». 
 
-						По своей сути, Ripple базируется на открытой разделённой базе данных или реестре, который использует процесс согласования, что позволяет делать платежи, обмен и перевод денежных средств в распределённом процессе.
-						</p></div>
-					
-					<br />
-					<p>Открытие портала xrp.wiki запланировано на начало 2018 года</p>
-						   </div>
-                				<canvas class="particles-js-canvas-el" style="width: 100%; height: 100%;" width="1800" height="450"></canvas></div>
-            				</div>
+										По своей сути, Ripple базируется на открытой разделённой базе данных или реестре, который использует процесс согласования, что позволяет делать платежи, обмен и перевод денежных средств в распределённом процессе.
+										</p>
+									</div><br />
+									<p>Открытие портала xrp.wiki запланировано на начало 2018 года</p>
+								</div>
+                			<canvas class="particles-js-canvas-el" style="width: 100%; height: 100%;" width="1800" height="450"></canvas></div>
+            			</div>
         		</div>
 		</div>
-	<div class="footer">contact@xrp.wiki</div>
+		<div class="footer">contact@xrp.wiki</div>
 	</div>
 	
 	<script src="http://appix.themeix.com/assets/js/plugins.js?v=1a1c30336f"></script>
